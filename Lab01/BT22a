@@ -1,0 +1,11 @@
+	.data 
+var1: 	.word 23
+
+	.text
+__star:
+	lw	$t0, var1 #load gia tri varl1 vao $t0
+	li 	$t1, 5 #luu gia tri 5 vao $t1
+	sw	$t1, var1 #luu gia tri cua $t1 vao varl1
+
+
+		

@@ -1,0 +1,11 @@
+	.data
+		string: .space 50
+
+main:   .text
+	li $v0, 8
+	la $a1, 50
+	la $a0, string
+	syscall
+	li $v0, 4
+	la $a0, string
+	syscall 

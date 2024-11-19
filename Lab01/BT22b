@@ -1,0 +1,11 @@
+
+		.data
+array1: 	.space 12
+		.text
+__star:		la	$t0, array1 #luu dia chi mang vao $t0
+		li	$t1, 5 #load 5 vao $t1
+		sw $t1, ($t0) #luu gia tri cua $t1 vao memory 
+		li $t1, 13 #luu gia tri 13 vao $t1
+		sw $t1, 4($t0) #luu gia tri 13 (d) vao +4mm
+		li $t1, -7 #luu gia tri -7 vao $t1
+		sw $t1, 8($t0) #luu gia tri -7 vao +8mm
